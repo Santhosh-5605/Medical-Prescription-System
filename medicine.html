@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+      margin: 15% auto;
+      background-image: url("img3.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .button {
+      background-color: #e7e7e7;
+      button {border-radius: 12px;}
+      border: none;
+      color: black;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s
+    }
+    .button {border-radius: 12px;}
+    .button:hover {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+</style>
+    <title>Medicine Prescription Expert System</title>
+    <script>
+        function prescribeMedicine() {
+            var symptoms = document.getElementById("symptoms").value;
+            var patientAge = document.getElementById("age").value;
+            var prescription = "Prescribed medicine: ..."; 
+            document.getElementById("prescriptionResult").textContent = prescription;
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    <h1>Medicine Prescription Expert System</h1>
+    <p><h3> symptoms and patient's age to get medicine prescription:</h3></p>
+    <div class="symptoms">
+    <b><label for="symptoms">Symptoms:</label></b>
+    <select id="symptoms">
+        <option value="cough">Cough</option>
+        <option value="headache">Head Ache</option>
+        <option value="fever">Fever</option>
+    </select><br><br>
+    </div>
+
+    <div class="gender">
+    <b><label for="gender">Gender:</label></b>
+    <select id="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Transgender">Transgender</option>
+      </select><br><br>
+       </div>
+
+       <div class="age">
+    <b><label for="age">Patient Age:</label></b>
+    <input type="text" id="age" name="age"><br><br>
+    </div>
+
+     <div class="button">
+        <center><input type="button" class="button" value="Prescription" onclick="prescribeMedicine()"></center>
+    </div><br><br>
+    <div class="warningbox">
+        <center><input type="button" class="button" value="Back" onclick="home()"></center>
+    </div>
+    <p id="prescriptionResult"></p>
+</body>
+</div>
+<script>
+    function prescribeMedicine()
+    {
+      window.open("webpage.html");
+    }
+    function home()
+    {
+        window.open("Front.html");
+    }
+    </script>
+</html>

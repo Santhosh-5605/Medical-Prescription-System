@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: beige;
+            }
+            .card{
+                box-shadow: 10px 10px 10px 10px  black;
+                width:20%;
+                text-align: center;
+                background-color:black;
+                color: white;
+                display:inline-block;
+                white-space: 10px;
+                border-radius: 20px solid black;
+                border:2px solid black;
+                margin-top: 70px;
+                margin-left: 500px;
+            }
+
+            .container {
+                padding: 2px 16px;
+                border-radius: 16px solid black;
+
+            }
+    
+
+            #patient{
+        border-collapse: collapse;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #patient td, #patient th{
+        border:2px solid black;
+        padding:5px
+      }
+
+      #patient tr{
+        background-color: #f2f2f2;
+      }
+
+      #patient th{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: black;
+        color: white;
+      }
+
+    table{
+        border-spacing: 10px;
+    }
+    .button {
+      background-color: #e7e7e7;
+      button {border-radius: 12px;}
+      border: none;
+      color: black;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s
+    }
+    .button {border-radius: 12px;}
+    .button:hover {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;"> MEDICINE FOR HEAD ACHE</h1>
+        <div class="card 1">
+            <img src="asfen.jpg"  style="width:100%">
+            <div class="container">
+                <h3><b>Monticope</b></h3>
+ </div>
+ </div>
+
+
+         <h1> Description</h1>
+              
+         <table id="patient">
+    <tr>
+        <th>DAY</th>
+        <th>Morning</th>
+        <th>Afternoon</th>
+        <th>Night</th>
+    </tr>  
+    
+    <tr>
+        <td>DAY-1</td>
+        <td>--</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+
+       <tr>
+          <td>DAY-2</td>
+          <td>--</td>
+          <td>1</td>
+          <td>1</td>
+       </tr>
+       </table><br><br>
+       <div class="warningbox">
+        <center><input type="button" class="button" value="Back" onclick="back()"></center>
+        </div>
+    </body>
+        <script>
+
+            function back()
+         {
+        window.open("medicine.html");
+         } 
+           </script>
+    
+</html>

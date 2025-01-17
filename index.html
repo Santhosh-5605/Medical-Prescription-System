@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .LOGIN {
+            text-align: center;
+
+        }
+
+        body {
+            background-image: url(BG.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        .LOGIN {
+            background-color: aliceblue;
+            width: 200px;
+            margin-top: 200px auto;
+            padding: 30px;
+            border: black;
+            border-radius: 5px;
+        }
+        div {
+            margin: 15% auto;
+        }
+        form{
+            text-wrap: ;
+        }
+        #addbtn{
+            border: 1px solid black;
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="LOGIN">
+        <b>
+            <h1 style="color: rgb(0, 0, 0);">LOGIN </h1>
+        </b>
+        <form method="post" action="login.php">
+            <input type="text" placeholder="email" name="email" required><br><br>
+            <input type="text" placeholder="password" name="pswd" required><br><br>
+            <input type="submit" value="Submit"><br><br>
+            <a id="addbtn" href="register.html">Create new user</a>
+        </form>
+    </div>
+
+</body>
+
+</html>
